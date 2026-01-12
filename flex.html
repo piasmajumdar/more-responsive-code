@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .box {
+            background-color: teal;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        @media screen and (max-width: 576px) {
+            body {
+                background-color: aqua;
+            }
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Lets Explore Flex</h2>
+    <div class="container">
+        <!-- .box>h3{box-$}+p>lorem50 -->
+        <div class="box">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla cumque non totam facilis possimus doloremque, exercitationem quo officiis, reprehenderit explicabo dolor dolorum repellat quidem? Nemo nesciunt atque magnam beatae incidunt minima, asperiores, saepe explicabo molestias, voluptate ipsum! Sed nobis voluptatum quam, dicta, iusto suscipit quis explicabo animi, qui iure modi.</p>
+        </div>
+        <div class="box">
+            <h3>box-2</h3>
+            <p>Laudantium illum nemo molestiae iste quo fugit mollitia reprehenderit repellendus temporibus illo animi dolore provident, id voluptate aliquid a veniam voluptates sed assumenda cupiditate iure repellat quibusdam. Perspiciatis qui ex repudiandae. Alias temporibus odio ex deserunt officiis nam velit eos neque! Doloremque ut accusantium obcaecati veritatis totam exercitationem modi id.</p>
+        </div>
+        <div class="box">
+            <h3>box-3</h3>
+            <p>Earum, dolores expedita vero minima ab reprehenderit quaerat. Recusandae repellendus tempora saepe error veniam debitis quod voluptatibus, sapiente molestias illum voluptates necessitatibus dolores eos sed eum porro expedita, ex perspiciatis? Dolore expedita vel eaque accusantium eligendi doloribus itaque quaerat nemo perferendis, quae non autem assumenda repudiandae voluptate hic labore veniam?</p>
+        </div>
+    </div>
+</body>
+</html>
